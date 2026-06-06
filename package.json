@@ -1,13 +1,15 @@
 {
   "name": "audio-xtts-preprocessor",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Prepara y optimiza muestras de audio para clonación de voz con XTTS v2. Edición visual con waveform, exportación a 24kHz Mono WAV, 100% local.",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && npx gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.3.0",
